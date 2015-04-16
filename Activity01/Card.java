@@ -34,26 +34,24 @@ public class Card {
      *                  containing the point value of the card
      */
     public Card(String cardRank, String cardSuit, int cardPointValue) {
-        suit = cardSuit;
-        rank = cardRank;
-        pointValue = cardPointValue;
+
     }
 
 
-   /**
+    /**
      * Accesses this <code>Card's</code> suit.
      * @return this <code>Card's</code> suit.
      */
     public String suit() {
-        return suit;
+
     }
 
-   /**
+    /**
      * Accesses this <code>Card's</code> rank.
      * @return this <code>Card's</code> rank.
      */
     public String rank() {
-        return rank;
+
     }
 
    /**
@@ -61,22 +59,20 @@ public class Card {
      * @return this <code>Card's</code> point value.
      */
     public int pointValue() {
-        return pointValue;
+
     }
 
-   /** Compare this card with the argument.
+    /** Compare this card with the argument.
      * @param otherCard the other card to compare to this
      * @return true if the rank, suit, and point value of this card
      *              are equal to those of the argument;
      *         false otherwise.
      */
     public boolean matches(Card otherCard) {
-        return otherCard.suit().equals(this.suit()) 
-            && otherCard.rank().equals(this.rank()) 
-            && otherCard.pointValue() == this.pointValue();
+
     }
 
-   /**
+    /**
      * Converts the rank, suit, and point value into a string in the format
      *     "[Rank] of [Suit] (point value = [PointValue])".
      * This provides a useful way of printing the contents
@@ -88,7 +84,6 @@ public class Card {
      */
     @Override
     public String toString() {
-        String newString = rank + " of " + suit + " (point value = " + pointValue + ")";
-        return newString;
+
     }
 }
